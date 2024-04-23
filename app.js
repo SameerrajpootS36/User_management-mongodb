@@ -4,7 +4,7 @@ const path = require("path");
 require("dotenv").config();
 const mongo_uri = process.env.MONGODB_URI
 const app = express();
-const PORT = process.env.PORT;
+const PORT = 500
 app.use(express.json());
 app.use(express.static(path.join(__dirname,'public')));
 mongoose
